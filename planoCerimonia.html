@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VouCasar.com - Cadastro de serviços</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<style>
+			#inputResultado {
+				background-color: rgba(0,0,0,0.1); 
+				color:#fff; 
+				border: none;
+			}		
+		</style>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+		<!-- Menu de navegação -->
+		<nav class="navbar navbar-danger" role="navigation">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a target="_blank" href="#" class="navbar-brand"><strong>VouCasar.com</strong></a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Plano de cerimônia</a></li>
+					<li><a href="#">Pagamento</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-user"></span> 
+							<span>Nome do usuário</span>
+							<span class="glyphicon glyphicon-chevron-down"></span>
+							&nbsp;
+						</a>
+						<ul class="dropdown-menu navbar-dropdown-usuario">
+							<li>
+								<div class="navbar-login">
+									<div class="row">
+										<div class="col-lg-12">
+											<p class="text-left"><strong>Nome</strong></p>
+											<p class="text-left small">email@exemplo.com</p>			
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="navbar-login navbar-login-session">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="#" class="btn btn-warning btn-block btn-sm">Atualizar Dados</a>
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="#" class="btn btn-danger btn-block btn-sm">Sair</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim do menu de navegação -->
+		
+		<div class="top-content">
+			<div class="inner-bg">
+				<div class="container">
+				
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 form-box">
+							
+							<div class="form-top">
+								<div class="form-top-left">
+                        			<h3>Plano de cerimônia</h3>
+                            		<p>Insira os dados referentes ao planejamento da cerimônia de casamento:</p>
+                        		</div>
+							</div>
+						
+							<div class="form-bottom">								
+								<form role="form" action="" method="post" class="login-form">
+									<div class="form-group">
+										<label class="form-label" for="form-dataCerimonia">Data da cerimônia</label>
+										<input type="text" id="dataCerimonia" name="form-dataCerimonia" placeholder="Ex: 01/01/9999" maxlength="10" class="form-nome form-input form-control">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-horaInicio">Horário de início</label>
+										<input type="text" id="horaInicio" name="form-horaInicio" placeholder="Ex: 14:00" maxlength="10" class="form-nome form-input form-control">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-horaFim">Horário de término</label>
+										<input type="text" id="horaFim" name="form-horaFim" placeholder="Ex: 21:00" maxlength="10" class="form-nome form-input form-control">
+									</div>
+									
+									<!-- Disponibilização dos serviços, com seus respectivos valores -->
+									
+									<div class="form-group">
+										<label class="form-label" for="form-horaFim">Valor total</label>
+										<input id="inputResultado" type="text" name="form-horaFim" maxlength="10" class="form-nome form-input form-control" value="R$10.000,00" readonly>
+									</div>
+									
+									<div class="form-group">
+										<label class="form-label" for="form-text">Forma de pagamento:</label>
+										<select class="form-control" id="formaPagamento">
+											<option value="1">Cartão de crédito</option>
+											<option value="2">Cartão de Débito</option>
+											<option value="3">Depósito bancário</option>
+										</select>
+									</div>
+								</form>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+		<script src="assets/js/scripts-cadastro-servico.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+</html>

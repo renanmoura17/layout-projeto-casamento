@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VouCasar.com - Cadastrar fornecedor</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style-selecaoServico.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="top-content">
+        	
+            <div class="inner-bg">
+                <div class="container">
+										
+					<!-- Formulário de login -->
+                    <div class="row">
+						<div class="col-sm-6 col-sm-offset-3 form-box">
+						
+							<div class="form-top">
+								<div class="form-top-left">
+                        			<h3>Cadastrar fornecedor</h3>
+                            		<p>Para efetuar seu cadastro, preencha o seguinte formulário:</p>
+                        		</div>
+							</div>
+							
+							<div class="form-bottom">
+								<form role="form" class="login-form">
+									<div class="form-group">
+										<label class="form-label" for="form-nome">Nome:</label>
+										<input type="text" name="form-nome" placeholder="Ex: Aluguel de ambientes - LTDA" class="form-nome form-input form-control" id="nomeUsuario">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-email">Email:</label>
+										<input type="email" name="form-email" placeholder="Ex: email@exemplo.com" class="form-email form-control" id="emailUsuario">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-senha">Senha:</label>
+										<input type="password" name="form-senha" placeholder="*****" class="form-senha form-control" id="senhaUsuario">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-cpf">CNPJ:</label>
+										<input type="text" name="form-cpf" placeholder="Ex: 11.111.111/1111-11" maxlength="14" class="form-nome form-input form-control" id="cpfUsuario">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-ddd">DDD:</label>
+										<input type="number" name="form-ddd" placeholder="Ex: 21" style="width:100px;" min="00" max="99" maxlength="2" class="form-nome form-input form-control" id="dddTelefoneUsuario">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-telefone">Número de telefone:</label>
+										<input type="text" name="form-telefone" placeholder="Ex: 99999-9999" maxlength="10" class="form-nome form-input form-control" id="numeroTelefoneUsuario">
+									</div>
+									<h3 style="color: #fff;">Endereço</h3>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Tipo de Logradouro:</label>
+										<input type="text" name="form-text" placeholder="Ex: Rua" class="form-text form-control" id="tipoLogradouro">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Logradouro:</label>
+										<input type="text" name="form-text" placeholder="Ex: Lombard" class="form-text form-control" id="logradouro">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Número:</label>
+										<input type="number" name="form-text" placeholder="Ex: 5000" min="0" max="99999999999" maxlength="2" class="form-text form-control" id="numero">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Complemento:</label>
+										<input type="text" name="form-text" placeholder="Ex: Loja 204" class="form-text form-control" id="complemento">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Bairro:</label>
+										<input type="text" name="form-text" placeholder="Ex: Barra da Tijuca" class="form-text form-control" id="bairro">
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Estado:</label>
+										<select class="form-control"id="estado" style="width:100px;">
+											<option value="1">HY</option>
+											<option value="2">HY</option>
+											<option value="3">HY</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="form-label" for="form-text">Cidade:</label>
+										<select class="form-control"id="cidade">
+											<option value="1">Floresta Kokiri</option>
+											<option value="2">Domínio Zora</option>
+											<option value="3">Vale Gerudo</option>
+										</select>
+									</div>
+									<button type="submit" class="btn">Salvar e continuar</button>
+									<button type="button" class="btn" onclick="location.href='index.html'" style="margin: 8px 0;">Voltar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>

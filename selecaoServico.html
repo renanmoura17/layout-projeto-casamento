@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VouCasar.com - Seleção de serviços</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+		<!-- Menu de navegação -->
+		<nav class="navbar navbar-danger" role="navigation">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a target="_blank" href="#" class="navbar-brand"><strong>VouCasar.com</strong></a>
+			</div>
+			
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Serviços</a></li>
+					<li><a href="#">Plano de cerimônia</a></li>
+					<li><a href="#">Pagamento</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-user"></span> 
+							<span>Nome do usuário</span>
+							<span class="glyphicon glyphicon-chevron-down"></span>
+							&nbsp;
+						</a>
+						<ul class="dropdown-menu navbar-dropdown-usuario">
+							<li>
+								<div class="navbar-login">
+									<div class="row">
+										<div class="col-lg-12">
+											<p class="text-left"><strong>Nome</strong></p>
+											<p class="text-left small">email@exemplo.com</p>			
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<div class="navbar-login navbar-login-session">
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="#" class="btn btn-warning btn-block btn-sm">Atualizar Dados</a>
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<p>
+												<a href="#" class="btn btn-danger btn-block btn-sm">Sair</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Fim do menu de navegação -->
+		
+		<div class="top-content">
+			<div class="inner-bg">
+				<div class="container">
+				
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 form-box">
+							
+							<div class="form-top">
+								<div class="form-top-left">
+                        			<h3>Serviços</h3>
+                            		<p>Escolha os serviços desejados em seu casamento:</p>
+                        		</div>
+							</div>
+						
+							<div class="form-bottom">								
+								<form role="form" action="" method="post" class="login-form">
+									<center>
+									<div class="btn-group" data-toggle="buttons">
+										<label class="btn btn-danger">
+											<label for="form-email">Espaço</label>
+											<input type="checkbox" id="checkboxEspaco" autocomplete="off" checked>
+										</label>
+										<label class="btn btn-danger">
+											<label for="form-email">Som</label>
+											<input type="checkbox" id="checkboxSom" autocomplete="off" checked>
+										</label>
+										<label class="btn btn-danger">
+											<label for="form-email">Vestimenta</label>
+											<input type="checkbox" id="checkboxVestimenta" autocomplete="off" checked>
+										</label>
+										<label class="btn btn-danger">
+											<label for="form-email">Imagem</label>
+											<input type="checkbox" id="checkboxImagem" autocomplete="off" checked>
+										</label>
+										<label class="btn btn-danger">
+											<label for="form-email">Buffet</label>
+											<input type="checkbox" id="checkboxBuffet" autocomplete="off" checked>
+										</label>
+										<label class="btn btn-danger">
+											<label for="form-email">Cerimonialista</label>
+											<input type="checkbox" id="checkboxCerimonialista" autocomplete="off" checked>
+										</label>
+									</div>
+									</center>
+									<br>
+									
+									<!-- Div que apresenta os espaços cadastrados -->
+									<div class="form-group" id="divListaEspaco" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Espaço:</label>
+											<select class="form-control">
+												<option value="1">Espaço 1</option>
+												<option value="2">Espaço 2</option>
+												<option value="3">Espaço 3</option>
+											</select>
+										</div>
+									</div>
+									
+									<!-- Div que apresenta os serviços de som cadastrados -->
+									<div class="form-group" id="divListaSom" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Serviço de som:</label>
+											<select class="form-control">
+												<option value="1">Serviço de som 1</option>
+												<option value="2">Serviço de som 2</option>
+												<option value="3">Serviço de som 3</option>
+											</select>
+										</div>
+									</div>
+									
+									<!-- Div que apresenta as vestimentas cadastrados -->
+									<div class="form-group" id="divListaVestimenta" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Vestimenta:</label>
+											<select class="form-control">
+												<option value="1">Vestimenta 1</option>
+												<option value="2">Vestimenta 2</option>
+												<option value="3">Vestimenta 3</option>
+											</select>
+										</div>
+									</div>
+									
+									<!-- Div que apresenta os serviços de imagem cadastrados -->
+									<div class="form-group" id="divListaImagem" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Serviço de imagem:</label>
+											<select class="form-control">
+												<option value="1">Serviço de imagem 1</option>
+												<option value="2">Serviço de imagem 2</option>
+												<option value="3">Serviço de imagem 3</option>
+											</select>
+										</div>
+									</div>
+									
+									<!-- Div que apresenta os serviços de buffet cadastrados -->
+									<div class="form-group" id="divListaBuffet" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Serviço de buffet:</label>
+											<select class="form-control">
+												<option value="1">Serviço de buffet 1</option>
+												<option value="2">Serviço de buffet 2</option>
+												<option value="3">Serviço de buffet 3</option>
+											</select>
+										</div>
+									</div>
+									
+									<!-- Div que apresenta os cerimonialistas cadastrados -->
+									<div class="form-group" id="divListaCerimonialista" style="display:none">
+										<div class="form-group">
+											<label class="form-label" for="form-text">Cerimonialista:</label>
+											<select class="form-control">
+												<option value="1">Cerimonialista 1</option>
+												<option value="2">Cerimonialista 2</option>
+												<option value="3">Cerimonialista 3</option>
+											</select>
+										</div>
+									</div>
+									<button type="submit" class="btn" onclick="location.href='planoCerimonia.html'" style="margin: 8px 0;">Continuar</button>
+								</form>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	
+	<!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+		<script src="assets/js/scripts-selecao-servico.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+	
+	<div class="top-content">
+        <div class="inner-bg">
+		</div>
+	</div>
+</html>
